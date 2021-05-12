@@ -1,0 +1,8 @@
+{
+    "name": "QFramework.Core.Runtime",
+    "references": [
+        "HTTP"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": []
+}
