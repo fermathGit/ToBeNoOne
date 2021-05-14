@@ -45,7 +45,7 @@ public class GameGate : MonoBehaviour {
             //初始化场景和UI
             //GlobalManager.instance.GameMap.Init();
             
-            UIMgr.OpenPanel<UIMainPanel>();
+            UIMgr.OpenPanel<UITestPanel>();
             
             ////第一次进游戏
             //if ( UserDataManager.instance.IsFirstEnterGame ) {
