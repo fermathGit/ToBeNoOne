@@ -172,8 +172,7 @@ namespace QFramework
             } );
 
             BtnClear.onClick.AddListener( () => {
-                UserDataManager.instance.MyDatas = new List<WzData>();
-                UserDataManager.instance.SaveUserData();
+                UIMgr.OpenPanel<UIUserDataPanel>();
             } );
         }
 

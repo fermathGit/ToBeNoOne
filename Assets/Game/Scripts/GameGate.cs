@@ -20,10 +20,10 @@ public class GameGate : MonoBehaviour {
             //屏幕适配
             if ( Screen.width * 1.0f / Screen.height <= 1080f / 2400 ) {
                 UIMgr.SetResolution( 1080, 2400, 0 );
-                Camera.main.orthographicSize = 11f;
+                //Camera.main.orthographicSize = 11f;
             } else {
                 UIMgr.SetResolution( 1080, 2400, 1 );
-                Camera.main.orthographicSize = 11f;
+                //Camera.main.orthographicSize = 11f;
             }
 
             //初始化配置表信息
