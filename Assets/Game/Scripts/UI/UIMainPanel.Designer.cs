@@ -76,7 +76,10 @@ namespace QFramework
         
         [SerializeField()]
         public Button BtnClear;
-        
+
+        [SerializeField()]
+        public Button BtnData;
+
         [SerializeField()]
         public Button BtnHistory;
         

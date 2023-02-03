@@ -177,6 +177,10 @@ namespace QFramework
             BtnClear.onClick.AddListener( () => {
                 UIMgr.OpenPanel<UIUserDataPanel>();
             } );
+
+            BtnData.onClick.AddListener(() => {
+                UIMgr.OpenPanel<UIChartPanel>();
+            });
         }
 
         #region func
