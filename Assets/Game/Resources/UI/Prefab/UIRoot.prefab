@@ -44,7 +44,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6760559878985815007}
-  - component: {fileID: 2550408043029951537}
+  - component: {fileID: 59422735983391634}
   - component: {fileID: 2952312592089902466}
   - component: {fileID: 20390479951977952}
   - component: {fileID: 9153147275439170284}
@@ -85,7 +85,7 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &2550408043029951537
+--- !u!114 &59422735983391634
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -94,7 +94,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2015371531319767136}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1d659124b20746f581184834974f5f6, type: 3}
+  m_Script: {fileID: 11500000, guid: b870e8f650ccb8743baa829ba1298fc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   mBgTrans: {fileID: 3576680258572196580}
@@ -162,13 +162,14 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 1536, y: 2726}
+  m_ReferenceResolution: {x: 960, y: 640}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 1
+  m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
 --- !u!1 &2324271436394909832
 GameObject:
   m_ObjectHideFlags: 0
@@ -354,7 +355,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 150366387017514140}
-  - component: {fileID: 7899458948301817910}
+  - component: {fileID: 675626715880587424}
   m_Layer: 5
   m_Name: Design
   m_TagString: Untagged
@@ -381,7 +382,7 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &7899458948301817910
+--- !u!114 &675626715880587424
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -390,7 +391,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5702052748387817597}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 112807e2ca1114296a9c42aeaaeead0d, type: 3}
+  m_Script: {fileID: 11500000, guid: 28e341774544d73439aa812c9138e3a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &5776772592230573485
@@ -433,8 +434,8 @@ Camera:
   m_GameObject: {fileID: 5776772592230573485}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 2
-  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 1}
+  m_ClearFlags: 3
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0

@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 224036182780720076}
-  - component: {fileID: -7246447381023603766}
+  - component: {fileID: 3676317655219663166}
   m_Layer: 5
   m_Name: UITipsPanel
   m_TagString: Untagged
@@ -37,7 +37,7 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 1080, y: 2400}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &-7246447381023603766
+--- !u!114 &3676317655219663166
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -46,12 +46,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1247988567158184}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 84dae8074ccab7c41a050a831e37a8de, type: 3}
+  m_Script: {fileID: 11500000, guid: f99703f2ae28b1048a8a55aac6bff44e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   mSubPanelInfos: []
   Tips: {fileID: 114571064068621970}
-  Content: {fileID: 114070023150008022}
+  Content: {fileID: 3948982288791043903}
 --- !u!1 &1368696547947130
 GameObject:
   m_ObjectHideFlags: 0
@@ -63,7 +63,6 @@ GameObject:
   - component: {fileID: 224745931651415238}
   - component: {fileID: 222417322137212698}
   - component: {fileID: 114571064068621970}
-  - component: {fileID: 114390334459352100}
   m_Layer: 5
   m_Name: Tips
   m_TagString: Untagged
@@ -114,6 +113,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.990566, g: 0.6494749, b: 0.6392157, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -128,21 +128,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &114390334459352100
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1368696547947130}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4211833ca4e7a4984b2d973425a62933, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MarkType: 0
-  CustomComponentName: 
-  CustomComment: 
 --- !u!1 &1592377050074012
 GameObject:
   m_ObjectHideFlags: 0
@@ -153,8 +138,7 @@ GameObject:
   m_Component:
   - component: {fileID: 224644460883337124}
   - component: {fileID: 222288941775468132}
-  - component: {fileID: 114070023150008022}
-  - component: {fileID: 114736119681613188}
+  - component: {fileID: 3948982288791043903}
   m_Layer: 5
   m_Name: Content
   m_TagString: Untagged
@@ -189,7 +173,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1592377050074012}
   m_CullTransparentMesh: 0
---- !u!114 &114070023150008022
+--- !u!114 &3948982288791043903
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -198,46 +182,28 @@ MonoBehaviour:
   m_GameObject: {fileID: 1592377050074012}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 048068853a7ce4045aea7dffde0c6a8e, type: 3}
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 839ac3f2f6c43ea429b0982e00c8bb81, type: 3}
-    m_FontSize: 12
+    m_Font: {fileID: 12800000, guid: 6e2b8b9cb39d4754ba5d2396ec8fd35d, type: 3}
+    m_FontSize: 94
     m_FontStyle: 0
     m_BestFit: 1
-    m_MinSize: 0
-    m_MaxSize: 300
+    m_MinSize: 5
+    m_MaxSize: 94
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 123
-  KeyString: 
-  CustomFont: {fileID: 114682541387137982, guid: b70c6f349a187194f87e3e78d88573c2,
-    type: 3}
-  IsOpenLocalize: 0
---- !u!114 &114736119681613188
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1592377050074012}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4211833ca4e7a4984b2d973425a62933, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MarkType: 0
-  CustomComponentName: 
-  CustomComment: 
+  m_Text: 

@@ -24,7 +24,7 @@ public class WzData {
     public float result10 = 0; //攒了多少
     public float result11 = 0; //当月总收入
     public float result12 = 0; //当月总收入的投资占比
-    public float result13 = 0;
+    public float result13 = 0; //公积金新增总额
     public float result14 = 0;
     public float result15 = 0;
     public float result16 = 0;
@@ -52,17 +52,18 @@ public class UserData {
         investmentDisplays.Add("蚂蚁金融");
         investmentDisplays.Add("同花顺");
         investmentDisplays.Add("华宝智投");
-        investmentDisplays.Add("内部调整");
+        investmentDisplays.Add("公积金");
+        investmentDisplays.Add("招商余额");
+        investmentDisplays.Add("闪电贷");
 
         consumptionDisplays.Add("微信零钱");
         consumptionDisplays.Add("余利宝");
         consumptionDisplays.Add("房租房贷");
         consumptionDisplays.Add("花呗");
         consumptionDisplays.Add("交通信卡");
-        consumptionDisplays.Add("浦发信卡");
+        consumptionDisplays.Add("建设信卡");
         consumptionDisplays.Add("中信信卡");
         consumptionDisplays.Add("京东白条");
-        consumptionDisplays.Add("内部调整");
 
     }
     

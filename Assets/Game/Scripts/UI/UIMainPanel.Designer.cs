@@ -31,7 +31,10 @@ namespace QFramework
         
         [SerializeField()]
         public InputField InputField_Income;
-        
+
+        [SerializeField()]
+        public InputField InputField_Gongjijin;
+
         [SerializeField()]
         public InputField InputField_Rate;
         

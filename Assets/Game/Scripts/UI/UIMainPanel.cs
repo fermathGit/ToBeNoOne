@@ -24,7 +24,7 @@ namespace QFramework
     
     public partial class UIMainPanel : QFramework.UIPanel
     {
-        float unitHeight = 140f;
+        float unitHeight = 110f;
 
         int curMonthInValue = 0;
         int curMonthCoValue = 0;
@@ -34,7 +34,7 @@ namespace QFramework
 
         protected override void ProcessMsg(int eventId, QFramework.QMsg msg)
         {
-            throw new System.NotImplementedException ();
+           
         }
         
         protected override void OnInit(QFramework.IUIData uiData)
@@ -102,12 +102,15 @@ namespace QFramework
                     return;
                 }
 
-                float income = float.Parse( InputField_Income.text );
+                float gongjijin = string.IsNullOrEmpty(InputField_Gongjijin.text) ? 0 : float.Parse(InputField_Gongjijin.text);
+                float income = float.Parse(InputField_Income.text) + gongjijin;
                 float rate = float.Parse( InputField_Rate.text ) / 100;
                 curMonthInValue = (int)( income * rate );
                 curMonthCoValue = (int)income - curMonthInValue;
                 IncomeInValue.text = curMonthInValue.ToString();
                 IncomeCoValue.text = curMonthCoValue.ToString();
+
+                IncomeInValue.transform.Find("help").GetComponent<Text>().text = (curMonthInValue - gongjijin).ToString();
 
                 InputField_Income.interactable = true;
                 InputField_Rate.interactable = true;
@@ -258,6 +261,7 @@ namespace QFramework
             data.result10 = GetInputTextValue( ResultAll.GetChild( 1 ).Find( "Text" ).GetComponent<Text>() );
             data.result11 = GetInputTextValue( InputField_Income );
             data.result12 = GetInputTextValue( InputField_Rate );
+            data.result13 = GetInputTextValue(InputField_Gongjijin);
 
             UserDataManager.instance.MyDatas.Add( data );
         }
@@ -287,6 +291,7 @@ namespace QFramework
             ResultAll.GetChild( 1 ).Find( "Text" ).GetComponent<Text>().text = data.result10.ToString();
             InputField_Income.text = data.result11.ToString();
             InputField_Rate.text = data.result12.ToString();
+            InputField_Gongjijin.text = data.result13.ToString();
         }
         #endregion
 
